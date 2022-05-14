@@ -10,7 +10,8 @@ public class GameWinnerPrintTest implements GameWinnerPrinter {
 
     @Override
     public void printWinner(Player winner) {
-        if(winner == this.trueWinner){
+        
+        if(winner != this.trueWinner){
             throw new RuntimeException("победитель не соответствует");
         }
     }

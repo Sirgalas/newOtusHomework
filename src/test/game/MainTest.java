@@ -10,7 +10,7 @@ public class MainTest {
    
     
     public static void main(String[] args) {
-      playerTrue();
+      playerOneNull();
         System.out.println("test end");
     }
     
@@ -26,11 +26,9 @@ public class MainTest {
     
     public static void playerTwoNull(){
         GameTest game = new GameTest(new DiceOneTest(),new GameWinnerPrintTest(player2));
-        game.testPlayGame(null, player2);
+        game.testPlayGame( player2,null);
     }
-    
-    
-    
+        
     public static void playerAllNull(){
         GameTest game = new GameTest(new DiceOneTest(),new GameWinnerPrintTest(player2));
         game.testPlayGame(null, null);
